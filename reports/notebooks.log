@@ -17,20 +17,28 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-from matplotlib import rcParams, cycler
+from keras.models import Model
+from keras.layers import Dense, Input, Dropout, LSTM, Activation
+from keras.layers.embeddings import Embedding
+from sklearn.metrics import classification_report, f1_score, log_loss, precision_score, recall_score
+
+import csv
 import matplotlib.pyplot as plt
 import numpy as np
-plt.ion()
+import pandas as pd
+
+np.random.seed(1)
 ------------------
 
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mModuleNotFoundError[0m                       Traceback (most recent call last)
-[0;32m<ipython-input-1-f5105857ecb6>[0m in [0;36m<module>[0;34m[0m
-[0;32m----> 1[0;31m [0;32mfrom[0m [0mmatplotlib[0m [0;32mimport[0m [0mrcParams[0m[0;34m,[0m [0mcycler[0m[0;34m[0m[0;34m[0m[0m
-[0m[1;32m      2[0m [0;32mimport[0m [0mmatplotlib[0m[0;34m.[0m[0mpyplot[0m [0;32mas[0m [0mplt[0m[0;34m[0m[0;34m[0m[0m
-[1;32m      3[0m [0;32mimport[0m [0mnumpy[0m [0;32mas[0m [0mnp[0m[0;34m[0m[0;34m[0m[0m
-[1;32m      4[0m [0mplt[0m[0;34m.[0m[0mion[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;32m<ipython-input-1-2cf47b7ff89c>[0m in [0;36m<module>[0;34m[0m
+[0;32m----> 1[0;31m [0;32mfrom[0m [0mkeras[0m[0;34m.[0m[0mmodels[0m [0;32mimport[0m [0mModel[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m      2[0m [0;32mfrom[0m [0mkeras[0m[0;34m.[0m[0mlayers[0m [0;32mimport[0m [0mDense[0m[0;34m,[0m [0mInput[0m[0;34m,[0m [0mDropout[0m[0;34m,[0m [0mLSTM[0m[0;34m,[0m [0mActivation[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      3[0m [0;32mfrom[0m [0mkeras[0m[0;34m.[0m[0mlayers[0m[0;34m.[0m[0membeddings[0m [0;32mimport[0m [0mEmbedding[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      4[0m [0;32mfrom[0m [0msklearn[0m[0;34m.[0m[0mmetrics[0m [0;32mimport[0m [0mclassification_report[0m[0;34m,[0m [0mf1_score[0m[0;34m,[0m [0mlog_loss[0m[0;34m,[0m [0mprecision_score[0m[0;34m,[0m [0mrecall_score[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      5[0m [0;34m[0m[0m
 
-[0;31mModuleNotFoundError[0m: No module named 'matplotlib'
-ModuleNotFoundError: No module named 'matplotlib'
+[0;31mModuleNotFoundError[0m: No module named 'keras'
+ModuleNotFoundError: No module named 'keras'
 
