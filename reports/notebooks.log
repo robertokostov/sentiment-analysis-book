@@ -33,6 +33,8 @@ The message was: Cell execution timed out.
 Here is a preview of the cell contents:
 -------------------
 !wget http://nlp.stanford.edu/data/glove.6B.zip
-!unzip glove*.zip
+
+with zipfile.ZipFile("glove.6B.zip","r") as zip_ref:
+    zip_ref.extractall(".")
 -------------------
 
