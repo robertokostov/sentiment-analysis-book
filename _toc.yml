@@ -1,0 +1,14 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: content
+chapters:
+- file: motivation
+- file: intro
+- file: lstm-as-solution
+- file: more-about-lstm
+- file: example
+- file: conclusion
+- file: sources
+- file: notebooks
