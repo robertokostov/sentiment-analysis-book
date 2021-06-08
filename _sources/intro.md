@@ -1,16 +1,31 @@
-# Welcome to your Jupyter Book
+# Содржина
 
-This is a small sample book to give you a feel for how book content is
-structured.
+- Мотивација
 
-:::{note}
-Here is a note!
-:::
+- Вовед
+  
+  - Што е Deep Learning?
+  
+  - Што е RNN?
 
-And here is a code block:
+- Проблемот кај RNN: краткотрајна меморија
 
-```
-e = mc^2
-```
+- 'LSTM' како решение
 
-Check out the content pages bundled with this sample book to see more.
+- Пример преку интуиција
+
+- Повеќе за LSTM
+  
+  - Концептот на LSTM
+  
+  - Сигмоиди
+  
+  - Порти кај LSTM
+  
+  - Python псевдо код за LSTM
+
+- Пример
+
+- Заклучок
+
+- Извор на материјали
