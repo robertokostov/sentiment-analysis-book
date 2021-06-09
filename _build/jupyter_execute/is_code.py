@@ -5,7 +5,7 @@
 
 # ### Вовед
 
-# #### Import на библиотеките кои се користат во кодот
+# ##### Import на библиотеките кои се користат во кодот
 
 # In[1]:
 
@@ -19,27 +19,24 @@ import csv
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import zipfile
 
 np.random.seed(1)
 
 
-# #### Симнување на glove векторите за репрезентација на зборови
+# ##### Симнување на glove векторите за репрезентација на зборови
 
 # In[2]:
 
 
 get_ipython().system('wget http://nlp.stanford.edu/data/glove.6B.zip')
-
-with zipfile.ZipFile("glove.6B.zip","r") as zip_ref:
-    zip_ref.extractall(".")
+get_ipython().system('unzip glove*.zip')
 
 
 # ### Помошни функции
 
-# #### Исчитување на glove фајлот со вредности
+# ##### Исчитување на glove фајлот со вредности
 
-# In[6]:
+# In[3]:
 
 
 def read_glove_vecs(glove_file):
@@ -65,7 +62,7 @@ def read_glove_vecs(glove_file):
 
 # ##### Softmax функцијата
 
-# In[7]:
+# In[4]:
 
 
 def softmax(x):
@@ -76,7 +73,7 @@ def softmax(x):
 
 # ##### Читање на соодветните вредности од CSV train и test датотеките
 
-# In[8]:
+# In[5]:
 
 
 def read_csv(filename):
@@ -98,7 +95,7 @@ def read_csv(filename):
 
 # ##### Излезите(бројки) ги претвора во one-hot вектори
 
-# In[9]:
+# In[6]:
 
 
 def convert_to_one_hot(y, c):
@@ -109,7 +106,7 @@ def convert_to_one_hot(y, c):
 
 # ##### Предвидување на излезите при дадени елементи како влез
 
-# In[10]:
+# In[7]:
 
 
 def predict(X, Y, W, b, word_to_vec_map):
@@ -135,7 +132,7 @@ def predict(X, Y, W, b, word_to_vec_map):
 
 # ##### Претворање на реченици дадени како влез во матрици од вредности
 
-# In[11]:
+# In[8]:
 
 
 def sentences_to_indices(X, word_to_index, max_len):
@@ -158,7 +155,7 @@ def sentences_to_indices(X, word_to_index, max_len):
 
 # ##### Креирање на веќе истрениран Embedding слој со помош на glove векторите
 
-# In[12]:
+# In[9]:
 
 
 def pretrained_embedding_layer(word_to_vec_map, word_to_index):
@@ -178,7 +175,7 @@ def pretrained_embedding_layer(word_to_vec_map, word_to_index):
 
 # ##### Креирање на модел со соодветни предефинирани вредности
 
-# In[13]:
+# In[10]:
 
 
 def sentiment_analysis(input_shape, word_to_vec_map, word_to_index):
@@ -208,7 +205,7 @@ def sentiment_analysis(input_shape, word_to_vec_map, word_to_index):
 
 # ##### Читање на train и test податоците, пренос на излезите како one-hot вектори, читање на векторите за репрезентација на зборови
 
-# In[14]:
+# In[11]:
 
 
 X_train, Y_train = read_csv('train_set.csv')
@@ -224,7 +221,7 @@ word_to_index_, index_to_word, word_to_vec_map_ = read_glove_vecs('glove.6B.50d.
 
 # ##### Креирање и тренирање на моделот
 
-# In[15]:
+# In[12]:
 
 
 model = sentiment_analysis((maxLen,), word_to_vec_map_, word_to_index_)
@@ -239,7 +236,7 @@ model.fit(X_train_indices, Y_train_oh, epochs=100, batch_size=32, shuffle=True)
 
 # ##### Тестирање на моделот со test податоците
 
-# In[16]:
+# In[13]:
 
 
 X_test_indices = sentences_to_indices(X_test, word_to_index_, max_len=maxLen)
@@ -252,7 +249,7 @@ print("Accuracy ", acc)
 
 # ##### Преглед на влезовите кои се грешно предвидени и дополнителни метрики за евалуација
 
-# In[17]:
+# In[14]:
 
 
 y_test_oh = np.eye(5)[Y_test.reshape(-1)]
@@ -283,7 +280,7 @@ matrix = classification_report(actual, predicted, labels=[0, 1, 2, 3, 4])
 
 # ##### Тестирање на моделот со влезови од корисник
 
-# In[18]:
+# In[15]:
 
 
 x_test = np.array(['very happy'])
@@ -292,7 +289,7 @@ print('Input: ' + x_test[0])
 print('Predicted class: ' + str(np.argmax(model.predict(X_test_indices))) + '\n')
 
 
-# In[19]:
+# In[16]:
 
 
 x_test = np.array(['very sad'])
@@ -301,7 +298,7 @@ print('Input: ' + x_test[0])
 print('Predicted class: ' + str(np.argmax(model.predict(X_test_indices))) + '\n')
 
 
-# In[20]:
+# In[17]:
 
 
 x_test = np.array(['i am starving'])
@@ -310,7 +307,7 @@ print('Input: ' + x_test[0])
 print('Predicted class: ' + str(np.argmax(model.predict(X_test_indices))) + '\n')
 
 
-# In[21]:
+# In[18]:
 
 
 x_test = np.array(['I have met the love of my life'])
@@ -321,37 +318,37 @@ print('Predicted class: ' + str(np.argmax(model.predict(X_test_indices))) + '\n'
 
 # ##### Приказ на мерките за успешност на моделот
 
-# In[22]:
+# In[19]:
 
 
 print('Accuracy: {0}'.format(str(acc)))
 
 
-# In[23]:
+# In[20]:
 
 
 print('Log loss: {0}'.format(loss))
 
 
-# In[24]:
+# In[21]:
 
 
 print('Precision: {0}'.format(precision))
 
 
-# In[25]:
+# In[22]:
 
 
 print('Recall: {0}'.format(recall))
 
 
-# In[26]:
+# In[23]:
 
 
 print('F1 score: {0}'.format(f1_score))
 
 
-# In[27]:
+# In[24]:
 
 
 print('Classification report: \n{0}'.format(matrix))

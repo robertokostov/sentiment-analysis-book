@@ -8,6 +8,6 @@ chapters:
 - file: lstm-as-solution
 - file: more-about-lstm
 - file: example
-- file: notebooks
+- file: is_code
 - file: conclusion
 - file: sources
