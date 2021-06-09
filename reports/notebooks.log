@@ -32,9 +32,8 @@ nbclient.exceptions.CellTimeoutError: A cell timed out while it was being execut
 The message was: Cell execution timed out.
 Here is a preview of the cell contents:
 -------------------
-%%capture
-
-!wget http://nlp.stanford.edu/data/glove.6B.zip
+with io.capture_output() as captured:
+      !wget http://nlp.stanford.edu/data/glove.6B.zip
 
 with zipfile.ZipFile("glove.6B.zip","r") as zip_ref:
     zip_ref.extractall(".")
