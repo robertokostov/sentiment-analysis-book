@@ -221,7 +221,7 @@ word_to_index_, index_to_word, word_to_vec_map_ = read_glove_vecs('glove.6B.50d.
 
 # ##### Креирање и тренирање на моделот
 
-# In[13]:
+# In[12]:
 
 
 model = sentiment_analysis((maxLen,), word_to_vec_map_, word_to_index_)
@@ -231,12 +231,12 @@ model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accur
 X_train_indices = sentences_to_indices(X_train, word_to_index_, maxLen)
 Y_train_oh = convert_to_one_hot(Y_train, 5)
 
-model.fit(X_train_indices, Y_train_oh, epochs=100, batch_size=32, shuffle=True);
+model.fit(X_train_indices, Y_train_oh, epochs=100, batch_size=32, shuffle=True)
 
 
 # ##### Тестирање на моделот со test податоците
 
-# In[14]:
+# In[13]:
 
 
 X_test_indices = sentences_to_indices(X_test, word_to_index_, max_len=maxLen)
@@ -249,7 +249,7 @@ print("Accuracy ", acc)
 
 # ##### Преглед на влезовите кои се грешно предвидени и дополнителни метрики за евалуација
 
-# In[15]:
+# In[14]:
 
 
 y_test_oh = np.eye(5)[Y_test.reshape(-1)]
@@ -280,7 +280,7 @@ matrix = classification_report(actual, predicted, labels=[0, 1, 2, 3, 4])
 
 # ##### Тестирање на моделот со влезови од корисник
 
-# In[26]:
+# In[15]:
 
 
 x_test = np.array(['very happy'])
@@ -289,7 +289,7 @@ print('Input: ' + x_test[0])
 print('Predicted class: ' + str(np.argmax(model.predict(X_test_indices))) + '\n')
 
 
-# In[27]:
+# In[16]:
 
 
 x_test = np.array(['very sad'])
@@ -298,7 +298,7 @@ print('Input: ' + x_test[0])
 print('Predicted class: ' + str(np.argmax(model.predict(X_test_indices))) + '\n')
 
 
-# In[28]:
+# In[17]:
 
 
 x_test = np.array(['i am starving'])
@@ -307,7 +307,7 @@ print('Input: ' + x_test[0])
 print('Predicted class: ' + str(np.argmax(model.predict(X_test_indices))) + '\n')
 
 
-# In[29]:
+# In[18]:
 
 
 x_test = np.array(['I have met the love of my life'])
@@ -318,37 +318,37 @@ print('Predicted class: ' + str(np.argmax(model.predict(X_test_indices))) + '\n'
 
 # ##### Приказ на мерките за успешност на моделот
 
-# In[20]:
+# In[19]:
 
 
 print('Accuracy: {0}'.format(str(acc)))
 
 
-# In[21]:
+# In[20]:
 
 
 print('Log loss: {0}'.format(loss))
 
 
-# In[22]:
+# In[21]:
 
 
 print('Precision: {0}'.format(precision))
 
 
-# In[23]:
+# In[22]:
 
 
 print('Recall: {0}'.format(recall))
 
 
-# In[24]:
+# In[23]:
 
 
 print('F1 score: {0}'.format(f1_score))
 
 
-# In[25]:
+# In[24]:
 
 
 print('Classification report: \n{0}'.format(matrix))

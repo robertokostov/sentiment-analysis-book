@@ -51,8 +51,6 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Заклучок" href="conclusion.html" />
-    <link rel="prev" title="Пример" href="example.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -89,7 +87,7 @@
   </a>
  </li>
 </ul>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="intro.html">
    Вовед
@@ -110,8 +108,8 @@
    Пример
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="notebooks.html">
    Линк до самиот Notebook
   </a>
  </li>
@@ -166,7 +164,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/notebooks.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="_sources/is-code.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -186,7 +184,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/robertokostov/sentiment-analysis-book/issues/new?title=Issue%20on%20page%20%2Fnotebooks.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/robertokostov/sentiment-analysis-book/issues/new?title=Issue%20on%20page%20%2Fis-code.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -207,7 +205,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/robertokostov/sentiment-analysis-book/master?urlpath=tree/docs/notebooks.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/robertokostov/sentiment-analysis-book/master?urlpath=tree/docs/is-code.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="_static/images/logo_binder.svg"
@@ -381,7 +379,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>--2021-06-10 19:17:06--  http://nlp.stanford.edu/data/glove.6B.zip
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>--2021-06-09 09:34:52--  http://nlp.stanford.edu/data/glove.6B.zip
 Resolving nlp.stanford.edu (nlp.stanford.edu)... 
 </pre></div>
 </div>
@@ -395,7 +393,7 @@ HTTP request sent, awaiting response...
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>302 Found
 Location: https://nlp.stanford.edu/data/glove.6B.zip [following]
---2021-06-10 19:17:07--  https://nlp.stanford.edu/data/glove.6B.zip
+--2021-06-09 09:34:53--  https://nlp.stanford.edu/data/glove.6B.zip
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Loaded CA certificate &#39;/etc/ssl/certs/ca-certificates.crt&#39;
@@ -410,7 +408,7 @@ Connecting to nlp.stanford.edu (nlp.stanford.edu)|171.64.67.140|:443...
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>301 Moved Permanently
 Location: http://downloads.cs.stanford.edu/nlp/data/glove.6B.zip [following]
---2021-06-10 19:17:08--  http://downloads.cs.stanford.edu/nlp/data/glove.6B.zip
+--2021-06-09 09:34:54--  http://downloads.cs.stanford.edu/nlp/data/glove.6B.zip
 Resolving downloads.cs.stanford.edu (downloads.cs.stanford.edu)... 
 </pre></div>
 </div>
@@ -424,395 +422,415 @@ HTTP request sent, awaiting response...
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>200 OK
 Length: 862182613 (822M) [application/zip]
-Saving to: &#39;glove.6B.zip.2&#39;
+Saving to: &#39;glove.6B.zip.1&#39;
 
 
-glove.6B.zip.2        0%[                    ]       0  --.-KB/s               
+glove.6B.zip.1        0%[                    ]       0  --.-KB/s               
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        0%[                    ]  47.82K   126KB/s               
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        0%[                    ]  15.30K  69.8KB/s               
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        0%[                    ] 142.08K   244KB/s               
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        0%[                    ]  80.34K   128KB/s               
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        0%[                    ] 213.27K   264KB/s               
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        0%[                    ] 132.66K   159KB/s               
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        0%[                    ] 439.52K   434KB/s               
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        0%[                    ] 278.31K   268KB/s               
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        0%[                    ] 892.02K   733KB/s               
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        0%[                    ] 569.61K   458KB/s               
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        0%[                    ]   1.77M  1.24MB/s               
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        0%[                    ]   1.13M   781KB/s               
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        0%[                    ]   3.01M  1.47MB/s               
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        0%[                    ]   1.89M  1.12MB/s               
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        0%[                    ]   4.56M  1.94MB/s               
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        0%[                    ]   2.69M  1.42MB/s               
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        0%[                    ]   5.23M  2.00MB/s               
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        0%[                    ]   3.53M  1.69MB/s               
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        0%[                    ]   6.82M  2.42MB/s               
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        0%[                    ]   4.37M  1.90MB/s               
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        0%[                    ]   7.79M  2.42MB/s    eta 5m 36s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        0%[                    ]   5.34M  2.13MB/s               
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        1%[                    ]   9.34M  2.73MB/s    eta 5m 36s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        0%[                    ]   6.29M  2.33MB/s               
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        1%[                    ]  10.24M  2.69MB/s    eta 5m 36s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        0%[                    ]   7.26M  2.50MB/s               
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        1%[                    ]  11.81M  2.94MB/s    eta 5m 36s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        1%[                    ]   8.31M  2.68MB/s    eta 5m 4s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        1%[                    ]  12.17M  2.83MB/s    eta 4m 46s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        1%[                    ]   9.42M  2.85MB/s    eta 5m 4s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        1%[                    ]  12.94M  2.88MB/s    eta 4m 46s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        1%[                    ]  10.59M  3.02MB/s    eta 5m 4s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        1%[                    ]  13.74M  2.93MB/s    eta 4m 46s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        1%[                    ]  11.79M  3.56MB/s    eta 5m 4s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        1%[                    ]  14.54M  3.09MB/s    eta 4m 46s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        1%[                    ]  13.08M  3.96MB/s    eta 5m 4s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        1%[                    ]  15.36M  3.24MB/s    eta 4m 46s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        1%[                    ]  14.41M  4.36MB/s    eta 3m 50s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        1%[                    ]  16.22M  3.41MB/s    eta 4m 23s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        1%[                    ]  15.57M  4.89MB/s    eta 3m 50s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        2%[                    ]  17.09M  3.59MB/s    eta 4m 23s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        1%[                    ]  16.29M  4.86MB/s    eta 3m 50s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        2%[                    ]  17.95M  3.73MB/s    eta 4m 23s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        2%[                    ]  17.07M  4.91MB/s    eta 3m 50s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        2%[                    ]  18.78M  3.79MB/s    eta 4m 23s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        2%[                    ]  17.96M  5.02MB/s    eta 3m 50s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        2%[                    ]  19.61M  4.09MB/s    eta 4m 23s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        2%[                    ]  19.04M  5.08MB/s    eta 3m 36s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        2%[                    ]  20.51M  4.02MB/s    eta 4m 7s  
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        2%[                    ]  20.02M  5.08MB/s    eta 3m 36s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        2%[                    ]  21.40M  4.18MB/s    eta 4m 7s  
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        2%[                    ]  20.87M  5.12MB/s    eta 3m 36s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        2%[                    ]  22.10M  3.95MB/s    eta 4m 7s  
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        2%[                    ]  21.79M  5.10MB/s    eta 3m 36s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        2%[                    ]  22.99M  4.08MB/s    eta 4m 7s  
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        2%[                    ]  22.63M  5.05MB/s    eta 3m 36s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        2%[                    ]  23.89M  3.88MB/s    eta 4m 7s  
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        2%[                    ]  23.25M  4.90MB/s    eta 3m 31s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        3%[                    ]  24.80M  4.12MB/s    eta 3m 56s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        2%[                    ]  24.34M  4.87MB/s    eta 3m 31s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        3%[                    ]  25.71M  3.92MB/s    eta 3m 56s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        3%[                    ]  25.57M  4.94MB/s    eta 3m 31s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        3%[                    ]  26.63M  4.20MB/s    eta 3m 56s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        3%[                    ]  26.81M  4.92MB/s    eta 3m 31s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        3%[                    ]  27.58M  4.24MB/s    eta 3m 56s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        3%[                    ]  27.93M  4.86MB/s    eta 3m 31s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        3%[                    ]  28.51M  4.26MB/s    eta 3m 56s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        3%[                    ]  28.21M  4.49MB/s    eta 3m 25s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        3%[                    ]  29.43M  4.28MB/s    eta 3m 46s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        3%[                    ]  29.75M  4.56MB/s    eta 3m 25s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        3%[                    ]  30.36M  4.29MB/s    eta 3m 46s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        3%[                    ]  30.31M  4.24MB/s    eta 3m 25s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        3%[                    ]  31.31M  4.28MB/s    eta 3m 46s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        3%[                    ]  31.87M  4.44MB/s    eta 3m 25s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        3%[                    ]  32.29M  4.40MB/s    eta 3m 46s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        3%[                    ]  32.68M  4.45MB/s    eta 3m 25s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        4%[                    ]  33.24M  4.39MB/s    eta 3m 46s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        4%[                    ]  33.53M  4.47MB/s    eta 3m 18s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        4%[                    ]  34.15M  4.38MB/s    eta 3m 37s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        4%[                    ]  34.36M  4.41MB/s    eta 3m 18s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        4%[                    ]  35.04M  4.44MB/s    eta 3m 37s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        4%[                    ]  35.22M  4.39MB/s    eta 3m 18s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        4%[                    ]  35.97M  4.44MB/s    eta 3m 37s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        4%[                    ]  36.08M  4.36MB/s    eta 3m 18s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        4%[                    ]  36.92M  4.52MB/s    eta 3m 37s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        4%[                    ]  36.96M  4.35MB/s    eta 3m 18s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        4%[                    ]  37.86M  4.56MB/s    eta 3m 37s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        4%[                    ]  37.84M  4.34MB/s    eta 3m 16s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        4%[                    ]  38.80M  4.55MB/s    eta 3m 30s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        4%[                    ]  38.75M  4.43MB/s    eta 3m 16s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        4%[                    ]  39.76M  4.54MB/s    eta 3m 30s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        4%[                    ]  39.63M  4.42MB/s    eta 3m 16s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        4%[                    ]  40.36M  4.27MB/s    eta 3m 30s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        4%[                    ]  40.54M  4.37MB/s    eta 3m 16s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        5%[&gt;                   ]  41.91M  4.43MB/s    eta 3m 30s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        5%[&gt;                   ]  41.45M  4.23MB/s    eta 3m 16s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        5%[&gt;                   ]  42.63M  4.33MB/s    eta 3m 29s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        5%[&gt;                   ]  42.37M  4.16MB/s    eta 3m 12s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        5%[&gt;                   ]  43.34M  4.22MB/s    eta 3m 29s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        5%[&gt;                   ]  43.32M  4.47MB/s    eta 3m 12s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        5%[&gt;                   ]  44.10M  4.18MB/s    eta 3m 29s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        5%[&gt;                   ]  44.28M  4.57MB/s    eta 3m 12s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        5%[&gt;                   ]  44.82M  4.12MB/s    eta 3m 29s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        5%[&gt;                   ]  45.20M  4.36MB/s    eta 3m 12s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        5%[&gt;                   ]  45.60M  4.11MB/s    eta 3m 29s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        5%[&gt;                   ]  46.14M  4.38MB/s    eta 3m 12s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        5%[&gt;                   ]  46.34M  4.00MB/s    eta 3m 29s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        5%[&gt;                   ]  47.10M  4.45MB/s    eta 3m 9s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        5%[&gt;                   ]  47.04M  3.95MB/s    eta 3m 29s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        5%[&gt;                   ]  48.06M  4.49MB/s    eta 3m 9s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        5%[&gt;                   ]  47.87M  3.95MB/s    eta 3m 29s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        5%[&gt;                   ]  48.98M  4.51MB/s    eta 3m 9s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        5%[&gt;                   ]  48.65M  3.94MB/s    eta 3m 29s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        6%[&gt;                   ]  49.96M  4.56MB/s    eta 3m 9s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        6%[&gt;                   ]  49.48M  3.86MB/s    eta 3m 29s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        6%[&gt;                   ]  50.91M  4.57MB/s    eta 3m 9s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        6%[&gt;                   ]  50.33M  3.85MB/s    eta 3m 26s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        6%[&gt;                   ]  51.75M  4.56MB/s    eta 3m 6s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        6%[&gt;                   ]  51.21M  3.84MB/s    eta 3m 26s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        6%[&gt;                   ]  52.69M  4.60MB/s    eta 3m 6s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        6%[&gt;                   ]  52.08M  3.83MB/s    eta 3m 26s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        6%[&gt;                   ]  53.63M  4.55MB/s    eta 3m 6s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        6%[&gt;                   ]  52.99M  3.83MB/s    eta 3m 26s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        6%[&gt;                   ]  54.60M  4.58MB/s    eta 3m 6s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        6%[&gt;                   ]  53.87M  4.08MB/s    eta 3m 26s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        6%[&gt;                   ]  55.55M  4.62MB/s    eta 3m 6s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        6%[&gt;                   ]  54.74M  3.90MB/s    eta 3m 23s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        6%[&gt;                   ]  56.50M  4.60MB/s    eta 3m 3s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        6%[&gt;                   ]  55.65M  4.02MB/s    eta 3m 23s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        6%[&gt;                   ]  57.48M  4.63MB/s    eta 3m 3s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        6%[&gt;                   ]  56.55M  4.08MB/s    eta 3m 23s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        7%[&gt;                   ]  58.44M  4.67MB/s    eta 3m 3s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        6%[&gt;                   ]  57.47M  4.13MB/s    eta 3m 23s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        7%[&gt;                   ]  59.43M  4.66MB/s    eta 3m 3s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        7%[&gt;                   ]  58.38M  4.18MB/s    eta 3m 23s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        7%[&gt;                   ]  60.38M  4.68MB/s    eta 3m 3s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        7%[&gt;                   ]  59.32M  4.27MB/s    eta 3m 19s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        7%[&gt;                   ]  61.33M  4.67MB/s    eta 3m 0s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        7%[&gt;                   ]  60.25M  4.38MB/s    eta 3m 19s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        7%[&gt;                   ]  62.28M  4.66MB/s    eta 3m 0s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        7%[&gt;                   ]  61.08M  4.39MB/s    eta 3m 19s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        7%[&gt;                   ]  63.21M  4.65MB/s    eta 3m 0s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        7%[&gt;                   ]  61.85M  4.31MB/s    eta 3m 19s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        7%[&gt;                   ]  64.16M  4.66MB/s    eta 3m 0s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        7%[&gt;                   ]  62.80M  4.40MB/s    eta 3m 19s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        7%[&gt;                   ]  65.14M  4.65MB/s    eta 3m 0s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        7%[&gt;                   ]  63.77M  4.44MB/s    eta 3m 16s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        8%[&gt;                   ]  66.07M  4.68MB/s    eta 2m 58s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        7%[&gt;                   ]  64.68M  4.45MB/s    eta 3m 16s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        8%[&gt;                   ]  66.92M  4.67MB/s    eta 2m 58s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        7%[&gt;                   ]  65.57M  4.46MB/s    eta 3m 16s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        8%[&gt;                   ]  67.86M  4.69MB/s    eta 2m 58s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        8%[&gt;                   ]  66.49M  4.47MB/s    eta 3m 16s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        8%[&gt;                   ]  68.87M  4.69MB/s    eta 2m 58s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        8%[&gt;                   ]  67.44M  4.50MB/s    eta 3m 16s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        8%[&gt;                   ]  69.81M  4.69MB/s    eta 2m 58s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        8%[&gt;                   ]  68.38M  4.50MB/s    eta 3m 13s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        8%[&gt;                   ]  70.79M  4.69MB/s    eta 2m 55s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        8%[&gt;                   ]  69.32M  4.51MB/s    eta 3m 13s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        8%[&gt;                   ]  71.76M  4.69MB/s    eta 2m 55s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        8%[&gt;                   ]  70.25M  4.54MB/s    eta 3m 13s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        8%[&gt;                   ]  72.48M  4.65MB/s    eta 2m 55s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        8%[&gt;                   ]  71.19M  4.55MB/s    eta 3m 13s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        8%[&gt;                   ]  73.10M  4.50MB/s    eta 2m 55s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        8%[&gt;                   ]  72.13M  4.54MB/s    eta 3m 13s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        9%[&gt;                   ]  74.03M  4.49MB/s    eta 2m 55s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        8%[&gt;                   ]  73.06M  4.52MB/s    eta 3m 10s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        9%[&gt;                   ]  75.01M  4.53MB/s    eta 2m 55s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        8%[&gt;                   ]  73.81M  4.50MB/s    eta 3m 10s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        9%[&gt;                   ]  75.85M  4.47MB/s    eta 2m 55s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        9%[&gt;                   ]  74.61M  4.50MB/s    eta 3m 10s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        9%[&gt;                   ]  76.82M  4.49MB/s    eta 2m 55s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        9%[&gt;                   ]  75.57M  4.50MB/s    eta 3m 10s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        9%[&gt;                   ]  77.51M  4.40MB/s    eta 2m 55s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        9%[&gt;                   ]  76.57M  4.55MB/s    eta 3m 10s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        9%[&gt;                   ]  78.50M  4.40MB/s    eta 2m 55s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        9%[&gt;                   ]  77.43M  4.51MB/s    eta 3m 8s  
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        9%[&gt;                   ]  79.49M  4.42MB/s    eta 2m 53s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        9%[&gt;                   ]  78.37M  4.51MB/s    eta 3m 8s  
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        9%[&gt;                   ]  80.15M  4.34MB/s    eta 2m 53s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        9%[&gt;                   ]  79.32M  4.53MB/s    eta 3m 8s  
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        9%[&gt;                   ]  80.28M  3.93MB/s    eta 2m 53s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        9%[&gt;                   ]  80.25M  4.52MB/s    eta 3m 8s  
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1        9%[&gt;                   ]  81.88M  4.15MB/s    eta 2m 53s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        9%[&gt;                   ]  81.17M  4.61MB/s    eta 3m 8s  
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       10%[=&gt;                  ]  82.54M  4.08MB/s    eta 2m 53s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2        9%[&gt;                   ]  82.12M  4.52MB/s    eta 3m 5s  
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       10%[=&gt;                  ]  83.06M  3.86MB/s    eta 2m 55s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2       10%[=&gt;                  ]  83.07M  4.57MB/s    eta 3m 5s  
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       10%[=&gt;                  ]  83.49M  3.74MB/s    eta 2m 55s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2       10%[=&gt;                  ]  84.02M  4.61MB/s    eta 3m 5s  
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       10%[=&gt;                  ]  84.24M  3.69MB/s    eta 2m 55s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2       10%[=&gt;                  ]  84.94M  4.53MB/s    eta 3m 5s  
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       10%[=&gt;                  ]  85.04M  3.72MB/s    eta 2m 55s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2       10%[=&gt;                  ]  85.87M  4.58MB/s    eta 3m 5s  
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       10%[=&gt;                  ]  85.25M  3.48MB/s    eta 2m 55s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2       10%[=&gt;                  ]  86.82M  4.60MB/s    eta 3m 2s  
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       10%[=&gt;                  ]  86.61M  3.62MB/s    eta 2m 57s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2       10%[=&gt;                  ]  87.81M  4.66MB/s    eta 3m 2s  
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       10%[=&gt;                  ]  87.23M  3.52MB/s    eta 2m 57s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2       10%[=&gt;                  ]  88.80M  4.66MB/s    eta 3m 2s  
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       10%[=&gt;                  ]  87.81M  3.48MB/s    eta 2m 57s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2       10%[=&gt;                  ]  89.76M  4.67MB/s    eta 3m 2s  
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       10%[=&gt;                  ]  88.42M  3.32MB/s    eta 2m 57s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2       11%[=&gt;                  ]  90.75M  4.72MB/s    eta 3m 2s  
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       10%[=&gt;                  ]  89.03M  3.33MB/s    eta 2m 57s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2       11%[=&gt;                  ]  91.75M  4.74MB/s    eta 2m 59s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       10%[=&gt;                  ]  89.68M  3.23MB/s    eta 2m 58s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2       11%[=&gt;                  ]  92.73M  4.73MB/s    eta 2m 59s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       10%[=&gt;                  ]  90.30M  3.10MB/s    eta 2m 58s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2       11%[=&gt;                  ]  93.75M  4.79MB/s    eta 2m 59s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       11%[=&gt;                  ]  90.93M  3.13MB/s    eta 2m 58s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2       11%[=&gt;                  ]  94.76M  4.79MB/s    eta 2m 59s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       11%[=&gt;                  ]  91.59M  3.40MB/s    eta 2m 58s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2       11%[=&gt;                  ]  95.76M  4.79MB/s    eta 2m 59s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       11%[=&gt;                  ]  92.24M  3.12MB/s    eta 2m 58s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2       11%[=&gt;                  ]  96.78M  4.85MB/s    eta 2m 57s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       11%[=&gt;                  ]  92.88M  3.12MB/s    eta 2m 59s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2       11%[=&gt;                  ]  97.76M  4.84MB/s    eta 2m 57s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       11%[=&gt;                  ]  93.54M  3.24MB/s    eta 2m 59s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2       12%[=&gt;                  ]  98.81M  4.86MB/s    eta 2m 57s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       11%[=&gt;                  ]  94.20M  3.21MB/s    eta 2m 59s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2       12%[=&gt;                  ]  99.85M  4.93MB/s    eta 2m 57s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       11%[=&gt;                  ]  94.89M  3.21MB/s    eta 2m 59s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2       12%[=&gt;                  ] 100.47M  4.81MB/s    eta 2m 57s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       11%[=&gt;                  ]  95.54M  3.18MB/s    eta 2m 59s 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2       12%[=&gt;                  ] 101.51M  4.82MB/s    eta 2m 54s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       11%[=&gt;                  ]  96.22M  3.16MB/s    eta 3m 0s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2       12%[=&gt;                  ] 102.55M  4.83MB/s    eta 2m 54s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       11%[=&gt;                  ]  96.92M  3.17MB/s    eta 3m 0s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2       12%[=&gt;                  ] 103.56M  4.88MB/s    eta 2m 54s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       11%[=&gt;                  ]  97.65M  3.21MB/s    eta 3m 0s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2       12%[=&gt;                  ] 104.47M  4.84MB/s    eta 2m 54s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       11%[=&gt;                  ]  98.24M  3.23MB/s    eta 3m 0s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2       12%[=&gt;                  ] 105.53M  4.87MB/s    eta 2m 54s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       12%[=&gt;                  ]  98.94M  3.25MB/s    eta 3m 0s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2       12%[=&gt;                  ] 106.60M  4.94MB/s    eta 2m 52s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       12%[=&gt;                  ]  99.65M  3.29MB/s    eta 3m 0s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2       13%[=&gt;                  ] 107.75M  4.98MB/s    eta 2m 52s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       12%[=&gt;                  ] 100.36M  3.31MB/s    eta 3m 0s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2       13%[=&gt;                  ] 108.63M  4.92MB/s    eta 2m 52s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       12%[=&gt;                  ] 101.07M  3.35MB/s    eta 3m 0s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2       13%[=&gt;                  ] 109.71M  4.98MB/s    eta 2m 52s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       12%[=&gt;                  ] 101.72M  3.35MB/s    eta 3m 0s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2       13%[=&gt;                  ] 110.90M  5.04MB/s    eta 2m 52s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       12%[=&gt;                  ] 102.40M  3.35MB/s    eta 3m 0s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2       13%[=&gt;                  ] 112.09M  5.08MB/s    eta 2m 48s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       12%[=&gt;                  ] 103.13M  3.37MB/s    eta 3m 0s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2       13%[=&gt;                  ] 113.12M  5.13MB/s    eta 2m 48s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       12%[=&gt;                  ] 103.85M  3.40MB/s    eta 3m 0s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2       13%[=&gt;                  ] 114.33M  5.18MB/s    eta 2m 48s 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       12%[=&gt;                  ] 104.53M  3.39MB/s    eta 3m 0s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.2       14%[=&gt;                  ] 115.46M  5.19MB/s    eta 2m 48s ^C
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       12%[=&gt;                  ] 105.17M  3.36MB/s    eta 3m 0s  
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Archive:  glove.6B.zip
-replace glove.6B.50d.txt? [y]es, [n]o, [A]ll, [N]one, [r]ename: 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       12%[=&gt;                  ] 105.87M  3.37MB/s    eta 3m 0s  
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       12%[=&gt;                  ] 106.56M  3.40MB/s    eta 3m 0s  
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       13%[=&gt;                  ] 107.26M  3.38MB/s    eta 3m 0s  
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       13%[=&gt;                  ] 107.98M  3.42MB/s    eta 3m 0s  
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>glove.6B.zip.1       13%[=&gt;                  ] 108.69M  3.44MB/s    eta 3m 0s  
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>^C
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>fish: Unknown command: unzip
+fish: 
+unzip glove*.zip
+^
 </pre></div>
 </div>
 </div>
@@ -1036,237 +1054,238 @@ replace glove.6B.50d.txt? [y]es, [n]o, [A]ll, [N]one, [r]ename:
 <span class="n">X_train_indices</span> <span class="o">=</span> <span class="n">sentences_to_indices</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">word_to_index_</span><span class="p">,</span> <span class="n">maxLen</span><span class="p">)</span>
 <span class="n">Y_train_oh</span> <span class="o">=</span> <span class="n">convert_to_one_hot</span><span class="p">(</span><span class="n">Y_train</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
 
-<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_indices</span><span class="p">,</span> <span class="n">Y_train_oh</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">);</span>
+<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_indices</span><span class="p">,</span> <span class="n">Y_train_oh</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Model: &quot;model_1&quot;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Model: &quot;model&quot;
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
-input_2 (InputLayer)         [(None, 10)]              0         
+input_1 (InputLayer)         [(None, 10)]              0         
 _________________________________________________________________
-embedding_1 (Embedding)      (None, 10, 50)            20000050  
+embedding (Embedding)        (None, 10, 50)            20000050  
 _________________________________________________________________
-lstm_2 (LSTM)                (None, 10, 128)           91648     
+lstm (LSTM)                  (None, 10, 128)           91648     
 _________________________________________________________________
-dropout_2 (Dropout)          (None, 10, 128)           0         
+dropout (Dropout)            (None, 10, 128)           0         
 _________________________________________________________________
-lstm_3 (LSTM)                (None, 128)               131584    
+lstm_1 (LSTM)                (None, 128)               131584    
 _________________________________________________________________
-dropout_3 (Dropout)          (None, 128)               0         
+dropout_1 (Dropout)          (None, 128)               0         
 _________________________________________________________________
-dense_1 (Dense)              (None, 5)                 645       
+dense (Dense)                (None, 5)                 645       
 _________________________________________________________________
-activation_1 (Activation)    (None, 5)                 0         
+activation (Activation)      (None, 5)                 0         
 =================================================================
 Total params: 20,223,927
 Trainable params: 20,223,927
 Non-trainable params: 0
 _________________________________________________________________
 Epoch 1/100
-5/5 [==============================] - 17s 249ms/step - loss: 1.6019 - accuracy: 0.2522
+5/5 [==============================] - 22s 247ms/step - loss: 1.6068 - accuracy: 0.2405
 Epoch 2/100
-5/5 [==============================] - 1s 237ms/step - loss: 1.5659 - accuracy: 0.3003
+5/5 [==============================] - 1s 223ms/step - loss: 1.5801 - accuracy: 0.3253
 Epoch 3/100
-5/5 [==============================] - 1s 284ms/step - loss: 1.5688 - accuracy: 0.2718
+5/5 [==============================] - 1s 223ms/step - loss: 1.5603 - accuracy: 0.3423
 Epoch 4/100
-5/5 [==============================] - 2s 299ms/step - loss: 1.5510 - accuracy: 0.2979
+5/5 [==============================] - 1s 229ms/step - loss: 1.5586 - accuracy: 0.3679
 Epoch 5/100
-5/5 [==============================] - 1s 294ms/step - loss: 1.5535 - accuracy: 0.2792
+5/5 [==============================] - 1s 229ms/step - loss: 1.5276 - accuracy: 0.3892
 Epoch 6/100
-5/5 [==============================] - 1s 249ms/step - loss: 1.5013 - accuracy: 0.4878
+5/5 [==============================] - 1s 228ms/step - loss: 1.4928 - accuracy: 0.4540
 Epoch 7/100
-5/5 [==============================] - 1s 248ms/step - loss: 1.4227 - accuracy: 0.5567
+5/5 [==============================] - 1s 225ms/step - loss: 1.4430 - accuracy: 0.4576
 Epoch 8/100
-5/5 [==============================] - 2s 337ms/step - loss: 1.4069 - accuracy: 0.5331
+5/5 [==============================] - 1s 230ms/step - loss: 1.4150 - accuracy: 0.4706
 Epoch 9/100
-5/5 [==============================] - 1s 253ms/step - loss: 1.3525 - accuracy: 0.5599
+5/5 [==============================] - 1s 229ms/step - loss: 1.3631 - accuracy: 0.5575
 Epoch 10/100
-5/5 [==============================] - 1s 256ms/step - loss: 1.2657 - accuracy: 0.6824
+5/5 [==============================] - 1s 224ms/step - loss: 1.2943 - accuracy: 0.6050
 Epoch 11/100
-5/5 [==============================] - 1s 303ms/step - loss: 1.2567 - accuracy: 0.6527
+5/5 [==============================] - 1s 232ms/step - loss: 1.2990 - accuracy: 0.6444
 Epoch 12/100
-5/5 [==============================] - 1s 264ms/step - loss: 1.2108 - accuracy: 0.7049
+5/5 [==============================] - 1s 230ms/step - loss: 1.2296 - accuracy: 0.7113
 Epoch 13/100
-5/5 [==============================] - 1s 303ms/step - loss: 1.3043 - accuracy: 0.5844
+5/5 [==============================] - 1s 231ms/step - loss: 1.2074 - accuracy: 0.7088
 Epoch 14/100
-5/5 [==============================] - 1s 277ms/step - loss: 1.2288 - accuracy: 0.6836
+5/5 [==============================] - 1s 224ms/step - loss: 1.1629 - accuracy: 0.7612
 Epoch 15/100
-5/5 [==============================] - 1s 292ms/step - loss: 1.1720 - accuracy: 0.7378
+5/5 [==============================] - 1s 227ms/step - loss: 1.1650 - accuracy: 0.7219
 Epoch 16/100
-5/5 [==============================] - 2s 346ms/step - loss: 1.1851 - accuracy: 0.7189
+5/5 [==============================] - 1s 234ms/step - loss: 1.1446 - accuracy: 0.7474
 Epoch 17/100
-5/5 [==============================] - 1s 305ms/step - loss: 1.1578 - accuracy: 0.7577
+5/5 [==============================] - 1s 230ms/step - loss: 1.1470 - accuracy: 0.7747
 Epoch 18/100
-5/5 [==============================] - 2s 265ms/step - loss: 1.1218 - accuracy: 0.7803
+5/5 [==============================] - 1s 224ms/step - loss: 1.1361 - accuracy: 0.7765
 Epoch 19/100
-5/5 [==============================] - 2s 331ms/step - loss: 1.1019 - accuracy: 0.8210
+5/5 [==============================] - 1s 225ms/step - loss: 1.0577 - accuracy: 0.8764
 Epoch 20/100
-5/5 [==============================] - 2s 360ms/step - loss: 1.0850 - accuracy: 0.8259
+5/5 [==============================] - 1s 224ms/step - loss: 1.0417 - accuracy: 0.9214
 Epoch 21/100
-5/5 [==============================] - 1s 264ms/step - loss: 1.0573 - accuracy: 0.8739
+5/5 [==============================] - 1s 225ms/step - loss: 1.0217 - accuracy: 0.8886
 Epoch 22/100
-5/5 [==============================] - 1s 264ms/step - loss: 1.0214 - accuracy: 0.9019
+5/5 [==============================] - 1s 228ms/step - loss: 1.0050 - accuracy: 0.9072
 Epoch 23/100
-5/5 [==============================] - 1s 281ms/step - loss: 1.0199 - accuracy: 0.8810
+5/5 [==============================] - 1s 235ms/step - loss: 0.9812 - accuracy: 0.9456
 Epoch 24/100
-5/5 [==============================] - 1s 286ms/step - loss: 0.9956 - accuracy: 0.9218
+5/5 [==============================] - 1s 224ms/step - loss: 0.9859 - accuracy: 0.9300
 Epoch 25/100
-5/5 [==============================] - 2s 284ms/step - loss: 0.9820 - accuracy: 0.9270
+5/5 [==============================] - 1s 233ms/step - loss: 0.9672 - accuracy: 0.9482
 Epoch 26/100
-5/5 [==============================] - 2s 330ms/step - loss: 1.0604 - accuracy: 0.8387
+5/5 [==============================] - 1s 224ms/step - loss: 0.9677 - accuracy: 0.9451
 Epoch 27/100
-5/5 [==============================] - 2s 333ms/step - loss: 0.9550 - accuracy: 0.9636
+5/5 [==============================] - 1s 226ms/step - loss: 0.9625 - accuracy: 0.9562
 Epoch 28/100
-5/5 [==============================] - 1s 266ms/step - loss: 0.9640 - accuracy: 0.9412
+5/5 [==============================] - 1s 226ms/step - loss: 0.9646 - accuracy: 0.9437
 Epoch 29/100
-5/5 [==============================] - 1s 281ms/step - loss: 0.9468 - accuracy: 0.9658
+5/5 [==============================] - 1s 222ms/step - loss: 0.9823 - accuracy: 0.9206
 Epoch 30/100
-5/5 [==============================] - 2s 313ms/step - loss: 1.0135 - accuracy: 0.8964
+5/5 [==============================] - 1s 224ms/step - loss: 0.9828 - accuracy: 0.9442
 Epoch 31/100
-5/5 [==============================] - 1s 263ms/step - loss: 1.0858 - accuracy: 0.8309
+5/5 [==============================] - 1s 225ms/step - loss: 0.9915 - accuracy: 0.9176
 Epoch 32/100
-5/5 [==============================] - 1s 285ms/step - loss: 1.0424 - accuracy: 0.8621
+5/5 [==============================] - 1s 227ms/step - loss: 0.9485 - accuracy: 0.9557
 Epoch 33/100
-5/5 [==============================] - 1s 284ms/step - loss: 1.0034 - accuracy: 0.8971
+5/5 [==============================] - 1s 229ms/step - loss: 0.9593 - accuracy: 0.9472
 Epoch 34/100
-5/5 [==============================] - 1s 290ms/step - loss: 0.9840 - accuracy: 0.9304
+5/5 [==============================] - 1s 228ms/step - loss: 0.9495 - accuracy: 0.9648
 Epoch 35/100
-5/5 [==============================] - 2s 319ms/step - loss: 0.9573 - accuracy: 0.9558
+5/5 [==============================] - 1s 234ms/step - loss: 0.9477 - accuracy: 0.9600
 Epoch 36/100
-5/5 [==============================] - 2s 301ms/step - loss: 0.9433 - accuracy: 0.9748
+5/5 [==============================] - 1s 230ms/step - loss: 0.9393 - accuracy: 0.9683
 Epoch 37/100
-5/5 [==============================] - 1s 279ms/step - loss: 0.9520 - accuracy: 0.9572
+5/5 [==============================] - 1s 230ms/step - loss: 0.9428 - accuracy: 0.9665
 Epoch 38/100
-5/5 [==============================] - 1s 286ms/step - loss: 0.9540 - accuracy: 0.9541
+5/5 [==============================] - 1s 243ms/step - loss: 0.9456 - accuracy: 0.9505
 Epoch 39/100
-5/5 [==============================] - 2s 298ms/step - loss: 0.9612 - accuracy: 0.9435
+5/5 [==============================] - 1s 230ms/step - loss: 0.9398 - accuracy: 0.9621
 Epoch 40/100
-5/5 [==============================] - 1s 299ms/step - loss: 0.9378 - accuracy: 0.9731
+5/5 [==============================] - 1s 227ms/step - loss: 0.9389 - accuracy: 0.9639
 Epoch 41/100
-5/5 [==============================] - 2s 310ms/step - loss: 0.9447 - accuracy: 0.9652
+5/5 [==============================] - 1s 229ms/step - loss: 0.9340 - accuracy: 0.9746
 Epoch 42/100
-5/5 [==============================] - 1s 265ms/step - loss: 0.9368 - accuracy: 0.9721
+5/5 [==============================] - 1s 235ms/step - loss: 0.9254 - accuracy: 0.9798
 Epoch 43/100
-5/5 [==============================] - 1s 301ms/step - loss: 0.9357 - accuracy: 0.9751
+5/5 [==============================] - 1s 230ms/step - loss: 0.9261 - accuracy: 0.9850
 Epoch 44/100
-5/5 [==============================] - 1s 297ms/step - loss: 0.9420 - accuracy: 0.9694
+5/5 [==============================] - 1s 237ms/step - loss: 0.9618 - accuracy: 0.9472
 Epoch 45/100
-5/5 [==============================] - 1s 281ms/step - loss: 0.9307 - accuracy: 0.9790
+5/5 [==============================] - 1s 240ms/step - loss: 0.9382 - accuracy: 0.9626
 Epoch 46/100
-5/5 [==============================] - 1s 273ms/step - loss: 0.9311 - accuracy: 0.9751
+5/5 [==============================] - 1s 233ms/step - loss: 0.9849 - accuracy: 0.9088
 Epoch 47/100
-5/5 [==============================] - 1s 287ms/step - loss: 0.9398 - accuracy: 0.9665
+5/5 [==============================] - 1s 229ms/step - loss: 0.9233 - accuracy: 0.9842
 Epoch 48/100
-5/5 [==============================] - 1s 289ms/step - loss: 0.9317 - accuracy: 0.9743
+5/5 [==============================] - 1s 224ms/step - loss: 0.9438 - accuracy: 0.9600
 Epoch 49/100
-5/5 [==============================] - 1s 279ms/step - loss: 0.9316 - accuracy: 0.9743
+5/5 [==============================] - 1s 224ms/step - loss: 0.9225 - accuracy: 0.9824
 Epoch 50/100
-5/5 [==============================] - 1s 284ms/step - loss: 0.9386 - accuracy: 0.9665
+5/5 [==============================] - 1s 230ms/step - loss: 0.9252 - accuracy: 0.9772
 Epoch 51/100
-5/5 [==============================] - 2s 298ms/step - loss: 0.9393 - accuracy: 0.9656
+5/5 [==============================] - 1s 237ms/step - loss: 0.9165 - accuracy: 0.9906
 Epoch 52/100
-5/5 [==============================] - 2s 333ms/step - loss: 0.9239 - accuracy: 0.9817
+5/5 [==============================] - 1s 226ms/step - loss: 0.9313 - accuracy: 0.9732
 Epoch 53/100
-5/5 [==============================] - 2s 327ms/step - loss: 0.9339 - accuracy: 0.9708
+5/5 [==============================] - 1s 232ms/step - loss: 0.9309 - accuracy: 0.9732
 Epoch 54/100
-5/5 [==============================] - 1s 298ms/step - loss: 0.9216 - accuracy: 0.9842
+5/5 [==============================] - 1s 235ms/step - loss: 0.9212 - accuracy: 0.9811
 Epoch 55/100
-5/5 [==============================] - 1s 291ms/step - loss: 0.9276 - accuracy: 0.9798
+5/5 [==============================] - 1s 225ms/step - loss: 0.9160 - accuracy: 0.9880
 Epoch 56/100
-5/5 [==============================] - 1s 282ms/step - loss: 0.9376 - accuracy: 0.9677
+5/5 [==============================] - 1s 236ms/step - loss: 0.9267 - accuracy: 0.9732
 Epoch 57/100
-5/5 [==============================] - 2s 317ms/step - loss: 0.9349 - accuracy: 0.9703
+5/5 [==============================] - 1s 232ms/step - loss: 0.9117 - accuracy: 0.9962
 Epoch 58/100
-5/5 [==============================] - 1s 311ms/step - loss: 0.9280 - accuracy: 0.9772
+5/5 [==============================] - 1s 232ms/step - loss: 0.9111 - accuracy: 0.9944
 Epoch 59/100
-5/5 [==============================] - 1s 288ms/step - loss: 0.9243 - accuracy: 0.9807
+5/5 [==============================] - 1s 231ms/step - loss: 0.9126 - accuracy: 0.9944
 Epoch 60/100
-5/5 [==============================] - 2s 321ms/step - loss: 0.9304 - accuracy: 0.9746
+5/5 [==============================] - 1s 241ms/step - loss: 0.9119 - accuracy: 0.9944
 Epoch 61/100
-5/5 [==============================] - 2s 337ms/step - loss: 0.9306 - accuracy: 0.9746
+5/5 [==============================] - 1s 229ms/step - loss: 0.9184 - accuracy: 0.9866
 Epoch 62/100
-5/5 [==============================] - 2s 296ms/step - loss: 0.9249 - accuracy: 0.9798
+5/5 [==============================] - 1s 227ms/step - loss: 0.9139 - accuracy: 0.9918
 Epoch 63/100
-5/5 [==============================] - 1s 293ms/step - loss: 0.9344 - accuracy: 0.9703
+5/5 [==============================] - 1s 232ms/step - loss: 0.9092 - accuracy: 0.9962
 Epoch 64/100
-5/5 [==============================] - 2s 312ms/step - loss: 0.9224 - accuracy: 0.9824
+5/5 [==============================] - 1s 234ms/step - loss: 0.9107 - accuracy: 0.9944
 Epoch 65/100
-5/5 [==============================] - 2s 311ms/step - loss: 0.9258 - accuracy: 0.9790
+5/5 [==============================] - 1s 230ms/step - loss: 0.9088 - accuracy: 0.9962
 Epoch 66/100
-5/5 [==============================] - 2s 321ms/step - loss: 0.9245 - accuracy: 0.9798
+5/5 [==============================] - 1s 228ms/step - loss: 0.9135 - accuracy: 0.9918
 Epoch 67/100
-5/5 [==============================] - 2s 307ms/step - loss: 0.9208 - accuracy: 0.9833
+5/5 [==============================] - 1s 225ms/step - loss: 0.9111 - accuracy: 0.9944
 Epoch 68/100
+5/5 [==============================] - 1s 227ms/step - loss: 0.9132 - accuracy: 0.9918
+Epoch 69/100
+5/5 [==============================] - 1s 234ms/step - loss: 0.9178 - accuracy: 0.9866
+Epoch 70/100
+5/5 [==============================] - 1s 223ms/step - loss: 0.9077 - accuracy: 0.9975
+Epoch 71/100
+5/5 [==============================] - 1s 224ms/step - loss: 0.9124 - accuracy: 0.9944
+Epoch 72/100
+5/5 [==============================] - 1s 229ms/step - loss: 0.9190 - accuracy: 0.9866
+Epoch 73/100
+5/5 [==============================] - 1s 228ms/step - loss: 0.9186 - accuracy: 0.9866
+Epoch 74/100
+5/5 [==============================] - 1s 227ms/step - loss: 0.9108 - accuracy: 0.9944
+Epoch 75/100
+5/5 [==============================] - 1s 240ms/step - loss: 0.9204 - accuracy: 0.9866
+Epoch 76/100
+5/5 [==============================] - 1s 229ms/step - loss: 0.9185 - accuracy: 0.9866
+Epoch 77/100
+5/5 [==============================] - 1s 240ms/step - loss: 0.9191 - accuracy: 0.9866
+Epoch 78/100
+5/5 [==============================] - 1s 239ms/step - loss: 0.9142 - accuracy: 0.9918
+Epoch 79/100
+5/5 [==============================] - 1s 241ms/step - loss: 0.9110 - accuracy: 0.9944
+Epoch 80/100
+5/5 [==============================] - 1s 224ms/step - loss: 0.9109 - accuracy: 0.9944
+Epoch 81/100
+5/5 [==============================] - 1s 223ms/step - loss: 0.9134 - accuracy: 0.9918
+Epoch 82/100
+5/5 [==============================] - 1s 224ms/step - loss: 0.9090 - accuracy: 0.9962
+Epoch 83/100
+5/5 [==============================] - 1s 227ms/step - loss: 0.9132 - accuracy: 0.9918
+Epoch 84/100
+5/5 [==============================] - 1s 229ms/step - loss: 0.9090 - accuracy: 0.9962
+Epoch 85/100
+5/5 [==============================] - 1s 231ms/step - loss: 0.9133 - accuracy: 0.9918
+Epoch 86/100
+5/5 [==============================] - 1s 232ms/step - loss: 0.9091 - accuracy: 0.9962
+Epoch 87/100
+5/5 [==============================] - 1s 238ms/step - loss: 0.9131 - accuracy: 0.9918
+Epoch 88/100
+5/5 [==============================] - 1s 239ms/step - loss: 0.9107 - accuracy: 0.9944
+Epoch 89/100
+5/5 [==============================] - 1s 239ms/step - loss: 0.9174 - accuracy: 0.9866
+Epoch 90/100
+5/5 [==============================] - 1s 241ms/step - loss: 0.9087 - accuracy: 0.9962
+Epoch 91/100
+5/5 [==============================] - 1s 228ms/step - loss: 0.9177 - accuracy: 0.9866
+Epoch 92/100
+5/5 [==============================] - 1s 232ms/step - loss: 0.9185 - accuracy: 0.9866
+Epoch 93/100
+5/5 [==============================] - 1s 237ms/step - loss: 0.9175 - accuracy: 0.9866
+Epoch 94/100
+5/5 [==============================] - 1s 228ms/step - loss: 0.9128 - accuracy: 0.9918
+Epoch 95/100
+5/5 [==============================] - 1s 226ms/step - loss: 0.9179 - accuracy: 0.9866
+Epoch 96/100
+5/5 [==============================] - 1s 234ms/step - loss: 0.9133 - accuracy: 0.9918
+Epoch 97/100
+5/5 [==============================] - 1s 223ms/step - loss: 0.9077 - accuracy: 0.9975
+Epoch 98/100
+5/5 [==============================] - 1s 224ms/step - loss: 0.9076 - accuracy: 0.9975
+Epoch 99/100
+5/5 [==============================] - 1s 227ms/step - loss: 0.9091 - accuracy: 0.9962
+Epoch 100/100
+5/5 [==============================] - 1s 225ms/step - loss: 0.9133 - accuracy: 0.9918
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5/5 [==============================] - 1s 276ms/step - loss: 0.9308 - accuracy: 0.9729
-Epoch 69/100
-5/5 [==============================] - 2s 339ms/step - loss: 0.9271 - accuracy: 0.9772
-Epoch 70/100
-5/5 [==============================] - 1s 270ms/step - loss: 0.9201 - accuracy: 0.9842
-Epoch 71/100
-5/5 [==============================] - 1s 301ms/step - loss: 0.9212 - accuracy: 0.9863
-Epoch 72/100
-5/5 [==============================] - 1s 269ms/step - loss: 0.9311 - accuracy: 0.9811
-Epoch 73/100
-5/5 [==============================] - 1s 281ms/step - loss: 0.9320 - accuracy: 0.9785
-Epoch 74/100
-5/5 [==============================] - 2s 313ms/step - loss: 0.9267 - accuracy: 0.9785
-Epoch 75/100
-5/5 [==============================] - 1s 284ms/step - loss: 0.9183 - accuracy: 0.9880
-Epoch 76/100
-5/5 [==============================] - 2s 309ms/step - loss: 0.9183 - accuracy: 0.9863
-Epoch 77/100
-5/5 [==============================] - 1s 301ms/step - loss: 0.9209 - accuracy: 0.9837
-Epoch 78/100
-5/5 [==============================] - 1s 276ms/step - loss: 0.9204 - accuracy: 0.9828
-Epoch 79/100
-5/5 [==============================] - 2s 326ms/step - loss: 0.9195 - accuracy: 0.9828
-Epoch 80/100
-5/5 [==============================] - 1s 279ms/step - loss: 0.9103 - accuracy: 0.9949
-Epoch 81/100
-5/5 [==============================] - 2s 308ms/step - loss: 1.0610 - accuracy: 0.8344
-Epoch 82/100
-5/5 [==============================] - 2s 320ms/step - loss: 1.0569 - accuracy: 0.8350
-Epoch 83/100
-5/5 [==============================] - 1s 286ms/step - loss: 1.0669 - accuracy: 0.8437
-Epoch 84/100
-5/5 [==============================] - 1s 273ms/step - loss: 0.9868 - accuracy: 0.9201
-Epoch 85/100
-5/5 [==============================] - 1s 284ms/step - loss: 0.9525 - accuracy: 0.9631
-Epoch 86/100
-5/5 [==============================] - 1s 292ms/step - loss: 0.9506 - accuracy: 0.9473
-Epoch 87/100
-5/5 [==============================] - 1s 267ms/step - loss: 0.9581 - accuracy: 0.9475
-Epoch 88/100
-5/5 [==============================] - 1s 272ms/step - loss: 0.9368 - accuracy: 0.9691
-Epoch 89/100
-5/5 [==============================] - 1s 289ms/step - loss: 0.9134 - accuracy: 0.9962
-Epoch 90/100
-5/5 [==============================] - 1s 298ms/step - loss: 0.9115 - accuracy: 0.9962
-Epoch 91/100
-5/5 [==============================] - 1s 279ms/step - loss: 0.9145 - accuracy: 0.9918
-Epoch 92/100
-5/5 [==============================] - 1s 269ms/step - loss: 0.9114 - accuracy: 0.9944
-Epoch 93/100
-5/5 [==============================] - 1s 292ms/step - loss: 0.9107 - accuracy: 0.9962
-Epoch 94/100
-5/5 [==============================] - 2s 321ms/step - loss: 0.9097 - accuracy: 0.9962
-Epoch 95/100
-5/5 [==============================] - 1s 276ms/step - loss: 0.9196 - accuracy: 0.9866
-Epoch 96/100
-5/5 [==============================] - 1s 291ms/step - loss: 0.9190 - accuracy: 0.9866
-Epoch 97/100
-5/5 [==============================] - 2s 327ms/step - loss: 0.9106 - accuracy: 0.9944
-Epoch 98/100
-5/5 [==============================] - 2s 301ms/step - loss: 0.9095 - accuracy: 0.9962
-Epoch 99/100
-5/5 [==============================] - 1s 286ms/step - loss: 0.9107 - accuracy: 0.9944
-Epoch 100/100
-5/5 [==============================] - 2s 322ms/step - loss: 0.9189 - accuracy: 0.9866
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;keras.callbacks.History at 0x7f2fe2956190&gt;
 </pre></div>
 </div>
 </div>
@@ -1286,9 +1305,9 @@ Epoch 100/100
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2/2 [==============================] - 1s 7ms/step - loss: 1.1055 - accuracy: 0.8036
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2/2 [==============================] - 1s 16ms/step - loss: 1.1351 - accuracy: 0.7679
 
-Accuracy  0.8035714030265808
+Accuracy  0.7678571343421936
 </pre></div>
 </div>
 </div>
@@ -1334,13 +1353,13 @@ Input: she got me a nice present
 Expected class: 2
 Predicted class: 0
 
-Input: work is hard
-Expected class: 3
-Predicted class: 2
-
-Input: This girl is messing with me
-Expected class: 3
+Input: he is a good friend
+Expected class: 2
 Predicted class: 0
+
+Input: Stop making this joke ha ha ha
+Expected class: 2
+Predicted class: 3
 
 Input: any suggestions for dinner
 Expected class: 4
@@ -1354,21 +1373,29 @@ Input: she is a bully
 Expected class: 3
 Predicted class: 0
 
-Input: My life is so boring
-Expected class: 3
-Predicted class: 0
-
 Input: will you be my valentine
 Expected class: 2
-Predicted class: 0
+Predicted class: 3
 
-Input: I do not want to joke
-Expected class: 3
-Predicted class: 0
+Input: he can pitch really well
+Expected class: 1
+Predicted class: 3
+
+Input: See you at the restaurant
+Expected class: 4
+Predicted class: 1
+
+Input: What you did was awesome
+Expected class: 2
+Predicted class: 3
 
 Input: go away
 Expected class: 3
 Predicted class: 1
+
+Input: I did not have breakfast
+Expected class: 4
+Predicted class: 0
 </pre></div>
 </div>
 </div>
@@ -1403,7 +1430,7 @@ Predicted class: 2
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Input: very sad
-Predicted class: 2
+Predicted class: 3
 </pre></div>
 </div>
 </div>
@@ -1419,7 +1446,7 @@ Predicted class: 2
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Input: i am starving
-Predicted class: 3
+Predicted class: 0
 </pre></div>
 </div>
 </div>
@@ -1435,7 +1462,7 @@ Predicted class: 3
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Input: I have met the love of my life
-Predicted class: 2
+Predicted class: 0
 </pre></div>
 </div>
 </div>
@@ -1450,7 +1477,7 @@ Predicted class: 2
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Accuracy: 0.8035714030265808
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Accuracy: 0.7678571343421936
 </pre></div>
 </div>
 </div>
@@ -1462,7 +1489,7 @@ Predicted class: 2
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Log loss: 1.1054936317460877
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Log loss: 1.1351069776075227
 </pre></div>
 </div>
 </div>
@@ -1474,7 +1501,7 @@ Predicted class: 2
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Precision: 0.8461111111111113
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Precision: 0.8021367521367522
 </pre></div>
 </div>
 </div>
@@ -1486,7 +1513,7 @@ Predicted class: 2
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Recall: 0.8519841269841268
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Recall: 0.7865079365079366
 </pre></div>
 </div>
 </div>
@@ -1498,7 +1525,7 @@ Predicted class: 2
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>F1 score: 0.8186754422048541
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>F1 score: 0.7615329768270944
 </pre></div>
 </div>
 </div>
@@ -1513,15 +1540,15 @@ Predicted class: 2
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Classification report: 
               precision    recall  f1-score   support
 
-           0       0.47      1.00      0.64         7
-           1       0.89      1.00      0.94         8
-           2       0.88      0.78      0.82        18
-           3       1.00      0.62      0.77        16
-           4       1.00      0.86      0.92         7
+           0       0.54      1.00      0.70         7
+           1       0.78      0.88      0.82         8
+           2       0.92      0.61      0.73        18
+           3       0.78      0.88      0.82        16
+           4       1.00      0.57      0.73         7
 
-    accuracy                           0.80        56
-   macro avg       0.85      0.85      0.82        56
-weighted avg       0.88      0.80      0.81        56
+    accuracy                           0.77        56
+   macro avg       0.80      0.79      0.76        56
+weighted avg       0.82      0.77      0.77        56
 </pre></div>
 </div>
 </div>
@@ -1538,24 +1565,22 @@ weighted avg       0.88      0.80      0.81        56
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "is"
+            mode: "python"
         },
         kernelOptions: {
-            kernelName: "is",
+            kernelName: "python3",
             path: "./."
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'is'</script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="example.html" title="previous page">Пример</a>
-    <a class='right-next' id="next-link" href="conclusion.html" title="next page">Заклучок</a>
 
         </div>
         
