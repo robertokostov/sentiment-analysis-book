@@ -3,7 +3,7 @@
 
 title: Recurrent neural networks with LSTM as focus
 author: Roberto Kostov
-logo: lstm-operations.png
+logo: media/lstm-operations.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -28,5 +28,6 @@ repository:
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
+  favicon: media/favicon.ico
   use_issues_button: true
   use_repository_button: true
